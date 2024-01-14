@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/AP-CSA.iml" filepath="$PROJECT_DIR$/.idea/AP-CSA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Brilliant Numbers/Brilliant Numbers.iml" filepath="$PROJECT_DIR$/Brilliant Numbers/Brilliant Numbers.iml" />
     </modules>
   </component>
 </project>

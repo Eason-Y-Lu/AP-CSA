@@ -22,7 +22,6 @@ public class Brilliant {
     }
 
     public ArrayList<Integer> getBrilliant() {
-
         return brilliant;
     }
 }

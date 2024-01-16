@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println(isBrilliant(33));
+        Brilliant brilliant = new Brilliant();
+        System.out.println(brilliant.getBrilliant());
     }
 
     public static boolean isPrime(int number) {

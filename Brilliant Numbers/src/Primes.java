@@ -2,30 +2,34 @@ import java.util.ArrayList;
 import java.util.Comparator;
 
 public class Primes {
-    private final ArrayList<Integer> primes = new ArrayList<>();
+    private final ArrayList<Integer> PRIMES = new ArrayList<>();
 
     public Primes(int numOfPrimes) {
         int nPrimes = 2;
         while (numOfPrimes > 0) {
             if (Main.isPrime(nPrimes)) {
-                primes.add(nPrimes);
+                PRIMES.add(nPrimes);
                 numOfPrimes -= 1;
             }
             nPrimes += 1;
         }
-        primes.sort(Comparator.reverseOrder());
+        PRIMES.sort(Comparator.reverseOrder());
     }
 
     public ArrayList<Integer> getPrimes() {
-        return primes;
+        return PRIMES;
     }
 
+    public ArrayList<Integer> getPrimesReversed() {
+        PRIMES.sort(Comparator.naturalOrder());
+        return PRIMES;
+    }
     public boolean isPrime(int number) {
-        if (number > primes.get(0)) {
-            int nPrimes = primes.get(0) + 1;
+        if (number > PRIMES.get(0)) {
+            int nPrimes = PRIMES.get(0) + 1;
             while (nPrimes <= number) {
                 if (Main.isPrime(nPrimes)) {
-                    primes.add(nPrimes);
+                    PRIMES.add(nPrimes);
                 }
                 nPrimes += 1;
             }

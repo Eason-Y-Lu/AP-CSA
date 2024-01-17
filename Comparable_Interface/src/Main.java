@@ -10,8 +10,8 @@ public class Main {
     }
 
     public static void printArray(Cow[] cows) {
-        for (int i = 0; i < cows.length; i++) {
-            System.out.println(cows[i].getName() + ", ");
+        for (Cow cow : cows) {
+            System.out.println(cow.getName() + ", ");
         }
         System.out.println("\n");
     }

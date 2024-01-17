@@ -22,12 +22,6 @@ public class Cow implements Comparable<Cow> {
 
     @Override
     public int compareTo(Cow o) {
-        if (itWeight > o.itWeight) {
-            return 1;
-        } else if (itWeight == o.itWeight) {
-            return 0;
-        } else {
-            return -1;
-        }
+        return Integer.compare(itWeight, o.itWeight);
     }
 }

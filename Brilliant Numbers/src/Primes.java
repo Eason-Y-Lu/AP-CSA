@@ -24,6 +24,7 @@ public class Primes {
         PRIMES.sort(Comparator.naturalOrder());
         return PRIMES;
     }
+
     public boolean isPrime(int number) {
         if (number > PRIMES.get(0)) {
             int nPrimes = PRIMES.get(0) + 1;

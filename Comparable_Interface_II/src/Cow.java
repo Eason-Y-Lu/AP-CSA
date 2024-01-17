@@ -3,4 +3,8 @@ public class Cow extends Animal {
         setName("Anonymous Cow");
         setWeight(1800);
     }
+
+    public Cow(int itsWeight, String itsName) {
+        super(itsWeight, itsName);
+    }
 }

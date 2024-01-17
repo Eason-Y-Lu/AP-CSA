@@ -3,4 +3,8 @@ public class Horse extends Animal {
         setName("Anonymous Horse");
         setWeight(1800);
     }
+
+    public Horse(int itsWeight, String itsName) {
+        super(itsWeight, itsName);
+    }
 }

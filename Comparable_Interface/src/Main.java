@@ -12,8 +12,8 @@ public class Main {
     public static void printArray(Cow[] cows) {
         //noinspection ForLoopReplaceableByForEach
         for (int i = 0; i < cows.length; i++) {
-            System.out.println(cows[i].getName() + ", ");
+            System.out.print(cows[i].getName() + ", ");
         }
-        System.out.println("\n");
+        System.out.print("\n");
     }
 }

@@ -1,6 +1,6 @@
 public class Animal implements Comparable<Animal> {
-    private static int itsWeight;
-    private static String itsName;
+    private int itsWeight;
+    private String itsName;
 
     public Animal() {
         //Default Constructor to be overwritten
@@ -11,31 +11,31 @@ public class Animal implements Comparable<Animal> {
         itsName = name;
     }
 
-    public static int getWeight() {
+    public int getWeight() {
         return itsWeight;
     }
 
-    public static void setWeight(int weight) {
+    public void setWeight(int weight) {
         itsWeight = weight;
     }
 
-    public static String getName() {
+    public String getName() {
         return itsName;
     }
 
-    public static void setName(String name) {
+    public void setName(String name) {
         itsName = name;
     }
 
-    public static void eat(int amtEaten) {
-        itsWeight = +amtEaten;
+    public void eat(int amtEaten) {
+        itsWeight = itsWeight + amtEaten;
     }
 
     @Override
     public int compareTo(Animal o) {
-        if (itsWeight > getWeight()) {
+        if (itsWeight > o.getWeight()) {
             return 1;
-        } else if (itsWeight == getWeight()) {
+        } else if (itsWeight == o.getWeight()) {
             return 0;
         } else {
             return -1;

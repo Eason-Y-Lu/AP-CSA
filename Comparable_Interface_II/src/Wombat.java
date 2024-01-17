@@ -7,7 +7,8 @@ public class Wombat extends Animal {
     public Wombat(int itsWeight, String itsName) {
         super(itsWeight, itsName);
     }
-    public static void eat(int amtEaten) {
+
+    public void eat(int amtEaten) {
         System.out.println("Wombats don't gain weight when they eat!");
     }
 }

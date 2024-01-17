@@ -7,4 +7,5 @@ public class Horse extends Animal {
     public Horse(int itsWeight, String itsName) {
         super(itsWeight, itsName);
     }
+
 }

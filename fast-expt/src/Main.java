@@ -1,4 +1,5 @@
 //code by Om
+//It computs B to the power of N
 public class Main {
     public static void main(String[] args) {
         System.out.println(fastExpt(7, 10));
